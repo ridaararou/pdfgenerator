@@ -4,9 +4,9 @@ require "pdfcrowd.php";
 // test pdf examples here as well
 // https://pdfcrowd.com/playground/html-to-pdf/78e16d0ad3a047188829/
 
-try
-{
-    echo '<div style="font-family: system-ui, helvetica , arial, sans-serif;"> <h3>Kreatinc PDF Generator</h3>';
+// try
+// {
+    echo '<div style="font-family: system-ui, helvetica , arial, sans-serif;"> <h3>Kreatinc PDF Generator!</h3>';
     
     if(!isset($_GET["url"]))
     {
@@ -69,16 +69,16 @@ try
     // echo $pdf;
 
     
-}
-catch(\Pdfcrowd\Error $why)
-{
-    // report the error
-    error_log("Pdfcrowd Error: {$why}\n");
+// // }
+// if(\Pdfcrowd\Error $why)
+// {
+//     // report the error
+//     error_log("Pdfcrowd Error: {$why}\n");
 
-    // rethrow or handle the exception
-    echo 'You can use this one as well: <a href="https://pdfcrowd.com/playground/html-to-pdf/78e16d0ad3a047188829/" target="_blank">PDF Generator</a>  ';
-    throw $why;
-}
+//     // rethrow or handle the exception
+//     echo 'You can use this one as well: <a href="https://pdfcrowd.com/playground/html-to-pdf/78e16d0ad3a047188829/" target="_blank">PDF Generator</a>  ';
+//     throw $why;
+// }
 
 ?>
 
